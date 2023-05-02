@@ -1,0 +1,18 @@
+<body style="border: solid;">
+ <h1 style="text-align: center;">Parent Component</h1>   
+<div style="border: dotted;">
+<h3 >Data Coming From Service Employee</h3>
+<!-- <p>{{employees[0].Country}}</p> -->
+<h1 *ngFor="let employees of employees">{{employees.Country}}&nbsp;->{{employees.Capital}}</h1> 
+
+</div>
+<!-- <app-employee [item]="currentItem"></app-employee> -->
+<!-- <ul>
+        <li *ngFor="let item of items">{{item}}</li>
+</ul> -->
+
+<h1>Data coming from Child component</h1>
+<!-- <h2 *ngFor="let item of items">{{item}}</h2> -->
+<h2>{{item}}</h2>
+<app-child (newItemEvent)="addItem($event)"></app-child>
+</body>

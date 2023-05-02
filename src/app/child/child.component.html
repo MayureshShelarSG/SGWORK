@@ -1,0 +1,7 @@
+<body style="border: solid;">
+    <h1 style="text-align: center;">Child Component</h1> 
+<h2 for="item-input">Send data to parent component:</h2>&nbsp;  
+<input type="text" id="item-input" #newItem>&nbsp;
+<button type="button" (click)="addNewItem(newItem.value)">Add to parent's list</button>
+<br><br>
+</body>

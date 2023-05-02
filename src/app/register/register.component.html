@@ -1,0 +1,41 @@
+
+<div class="nb">
+<div class="container">
+	
+	<div class="card">
+		<div class="card-image">
+			<img src="/assets/sgr1.png" alt="..." style="height: 90px;">
+		<!-- <h1 style="text-align: center;">SAINT-GOBAIN</h1>
+		<h3 style="text-align: center;">User | Sign-Up</h3> -->
+		</div>
+		<!-- <div class="card-image">	
+			<h2 class="card-heading">
+				Get started
+				<small>Let us create your account</small>
+			</h2>
+		</div> -->
+		<form class="card-form">
+			<div class="input">
+				<input type="text" class="input-field" name="fullname"  [(ngModel)]="fullname" value="Mayuresh Shelar" required/>
+				<label class="input-label">Full name</label>
+			</div>
+						<div class="input">
+				<input type="text" class="input-field" name="email" [(ngModel)]="email" value="Mayureshshelar@gmail.com" required/>
+				<label class="input-label">Email</label>
+			</div>
+				<div class="input">
+				<input type="password" name="password" [(ngModel)]="password" class="input-field" required/>
+				<label class="input-label">Password</label>
+			</div>
+			<div class="action">
+				<button class="action-button" (click)="setcre()" >Sign Up</button>
+			</div>
+		</form>
+		<div class="card-info">
+			<!-- <p>By signing up you are agreeing to our <a href="#">Terms and Conditions</a></p> -->
+			<a routerLink="/login2">Already registered!</a><br>
+		</div>
+	</div>
+</div>
+</div> 
+

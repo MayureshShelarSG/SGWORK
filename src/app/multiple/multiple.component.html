@@ -1,0 +1,41 @@
+<!-- <form [ngFormOptions]="form" (ngSubmit)="onSubmit()">
+  <label>Name:</label>
+  <input ngfor="name" type="text">
+  <label>Email:</label>
+  <input formControlName="email" type="email">
+  <button type="submit">Save</button>
+
+  <button (click)="resetForm()">Enter another instance</button>
+</form> -->
+
+<div>Multiple Forms</div>
+<br>
+<!-- <label>Name:</label>
+<input type="text" name="name" [(ngModel)]="name">
+<label>Email:</label>
+<input type="email" name="email" [(ngModel)]="email">
+<button (click)="onSubmit()" >Save</button>
+<button (click)="resetForm()">Enter another instance</button> -->
+
+
+<form [formGroup]="myform" (ngSubmit)="onSubmit()">
+  <label>Name:</label>&nbsp;
+  <input formControlName="name" type="text">
+  <br><br>
+  <label>Email:</label>&nbsp;&nbsp;
+  <input formControlName="email" type="email">
+  <br><br>
+  <button type="submit">Save</button>
+</form>
+<br>
+<!-- <input [(ngModel)]="value1" type="text">enter num
+<button (click)="ondelete(value1)">delete</button> -->
+<br>
+<button (click)="resetForm()">Enter another instance</button>&nbsp;
+<button (click)="showData()">show data</button><br>
+<br>
+<ol>
+  <li *ngFor="let i of data2;let indexOfelement=index; let ind=index;">{{i.name}} {{i.email}}
+  <button (click)="ondeleteitem(ind)">Delete</button>
+  </li>
+</ol><br>
