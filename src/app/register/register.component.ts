@@ -37,7 +37,7 @@ setcre(){
   localStorage.setItem("email",this.email);
   localStorage.setItem("password",this.password);
 
-  alert(this.fullname + " registered successfully");
+  alert(this.fullname + "you have registered successfully ");
   }
 } 
 }
